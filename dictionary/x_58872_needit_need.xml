@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Need" max_length="40" name="x_58872_needit_need" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Human resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+                <element label="Humanities and science" sequence="3" value="H&amp;s"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human resources1" sequence="0" value="hr1"/>
+                <element label="Human resources2" sequence="1" value="hr2"/>
+                <element label="Facilities1" sequence="2" value="f1"/>
+                <element label="Facilities2" sequence="3" value="f2"/>
+                <element label="Legal1" sequence="4" value="legal1"/>
+                <element label="Legal2" sequence="5" value="legal2"/>
+                <element label="Humanities and science1" sequence="6" value="H$S1"/>
+                <element label="Humanities and science2" sequence="7" value="H$S2"/>
+            </choice>
+        </element>
+        <element label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
